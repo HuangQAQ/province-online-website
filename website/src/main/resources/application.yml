@@ -1,0 +1,15 @@
+spring:
+  devtools:
+    livereload:
+      port: 30980
+      enabled: true
+  profiles:
+    active: prod
+server:
+  port: 8089
+  servlet:
+    context-path: /province
+# 数据库授权
+#  grant all on *.* to admin@'%' identified by 'sunben';
+logging:
+  config: classpath:logback-spring.xml
